@@ -4,6 +4,8 @@
  */
 package com.mycompany.airline_reservation;
 
+import static java.awt.Color.blue;
+
 /**
  *
  * @author shlok
@@ -15,6 +17,7 @@ public class AddFlight extends javax.swing.JInternalFrame {
      */
     public AddFlight() {
         initComponents();
+        this.getContentPane().setBackground(blue);
     }
 
     /**
