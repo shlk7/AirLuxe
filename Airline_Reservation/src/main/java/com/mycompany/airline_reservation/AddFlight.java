@@ -230,6 +230,11 @@ public class AddFlight extends javax.swing.JInternalFrame {
         });
 
         jButton10.setText("Delete");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -301,12 +306,20 @@ public class AddFlight extends javax.swing.JInternalFrame {
             
             JOptionPane.showMessageDialog(null, "Flight Added Successfully");
             
+            this.setVisible(false);
+            
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_jButton10ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
