@@ -4,5 +4,6 @@ The is based on the airline reservation where you can book your fight ticket, vi
 
 Tech Stack/Technologies Used:
 
-Java Swing
-MYSQL
+. Java Swing
+
+. MYSQL
