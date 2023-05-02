@@ -121,9 +121,14 @@ public class BookTicket extends javax.swing.JInternalFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Search your Flight");
 
-        arrival.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bengaluru", "Chennai", "Delhi", "Kolkata", "Mubmabi" }));
+        arrival.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bengaluru", "Chennai", "Delhi", "Kolkata", "Mumbai" }));
 
-        departure.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bengaluru", "Chennai", "Delhi", "Kolkata", "Mubmabi" }));
+        departure.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bengaluru", "Chennai", "Delhi", "Kolkata", "Mumbai" }));
+        departure.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                departureActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -543,6 +548,10 @@ public class BookTicket extends javax.swing.JInternalFrame {
         
         this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void departureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departureActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_departureActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -173,7 +173,7 @@
         <Component class="javax.swing.JComboBox" name="arrival">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Bengaluru&quot;, &quot;Chennai&quot;, &quot;Delhi&quot;, &quot;Kolkata&quot;, &quot;Mubmabi&quot; })" type="code"/>
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Bengaluru&quot;, &quot;Chennai&quot;, &quot;Delhi&quot;, &quot;Kolkata&quot;, &quot;Mumbai&quot; })" type="code"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -184,9 +184,12 @@
         <Component class="javax.swing.JComboBox" name="departure">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Bengaluru&quot;, &quot;Chennai&quot;, &quot;Delhi&quot;, &quot;Kolkata&quot;, &quot;Mubmabi&quot; })" type="code"/>
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Bengaluru&quot;, &quot;Chennai&quot;, &quot;Delhi&quot;, &quot;Kolkata&quot;, &quot;Mumbai&quot; })" type="code"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departureActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JComboBox&lt;&gt;()"/>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
